@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects — Portfolio</title>
+  <style>
+    /* basic reset + box-sizing */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* Navbar styles */
+    nav {
+      background-color: #4b6cb7;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* sticky navbar on top */
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      color: white;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #395490;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .project-grid {
+      display: grid;
+      gap: 20px;
+      /* responsive grid: min 260px, expand to fit */
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-content h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.3rem;
+      color: #222;
+    }
+    .card-content p {
+      flex: 1;
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .card-content a {
+      display: inline-block;
+      text-decoration: none;
+      background: #4b6cb7;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 4px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .card-content a:hover {
+      background: #395490;
+    }
+
+    @media (max-width: 600px) {
+      .project-grid {
+        gap: 15px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="home.html" class="logo">My Portfolio</a>
+    <ul>
+      <li><a href="web.html">Home</a></li>
+      <li><a href="about me.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <img src="homers.jpeg" alt="The Story in the Book">
+          <div class="card-content">
+            <h3>The Story in the Book</h3>
+            <p>A creative writing story published online.</p>
+            <a href="homer.html" target="_blank">View Story</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="123.jpeg" alt="MENUDO">
+          <div class="card-content">
+            <h3>Giniling Recipe</h3>
+            <p>MY RECIPE.</p>
+            <a href="pakyaw.html">View Recipe</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="g.jpeg" alt="Ice Shake Order Form">
+          <div class="card-content">
+            <h3>Ice Shake Order Form</h3>
+            <p>A simple order form website for ice shake.</p>
+            <a href="act2.html">Order Now</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="more3.jpg" alt="Bike Website">
+          <div class="card-content">
+            <h3>Bike Website</h3>
+            <p>A site demonstrating bike-related activities and info.</p>
+            <a href="FF.html">View Project</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

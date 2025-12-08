@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandesal Order Menu</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .menu-item { margin-bottom: 20px; border: 1px solid #ddd; padding: 10px; }
+        label { display: block; margin-bottom: 5px; }
+        select, input[type="number"] { margin-bottom: 10px; }
+        button { background-color: #4CAF50; color: white; padding: 10px; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+<body style="background-image: url('panddesal.jpeg');">
+    <h1>Pandesal Order Menu</h1>
+    <form id="orderForm">
+        <div class="menu-item">
+            <h3>Classic Pandesal</h3>
+            <label for="classicQty">Quantity (per dozen):</label>
+            <input type="number" id="classicQty" min="0" value="0">
+            <p>Price: $2.99 per dozen</p>
+        </div>
+        
+        <div class="menu-item">
+            <h3>Malunggay Pandesal</h3>
+            <label for="malunggayQty">Quantity (per dozen):</label>
+            <input type="number" id="malunggayQty" min="0" value="0">
+            <p>Price: $3.49 per dozen</p>
+        </div>
+        
+        <div class="menu-item">
+            <h3>Ube Pandesal</h3>
+            <label for="ubeQty">Quantity (per dozen):</label>
+            <input type="number" id="ubeQty" min="0" value="0">
+            <p>Price: $3.49 per dozen</p>
+        </div>
+        
+        <div class="menu-item">
+            <h3>Cheese Pandesal</h3>
+            <label for="cheeseQty">Quantity (per dozen):</label>
+            <input type="number" id="cheeseQty" min="0" value="0">
+            <p>Price: $3.99 per dozen</p>
+        </div>
+        
+        <button type="submit">Place Order</button>
+    </form>
+    
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Order submitted! (This is a demo; in a real app, handle submission here.)');
+        });
+    </script>
+</body>
+</html>

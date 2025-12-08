@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pininyahang Manok Order Menu</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .menu-item { margin-bottom: 20px; border: 1px solid #ddd; padding: 10px; }
+        label { display: block; margin-bottom: 5px; }
+        select, input[type="number"] { margin-bottom: 10px; }
+        button { background-color: #4CAF50; color: white; padding: 10px; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+<body style="background-image: url('mers.jpeg');">
+    <h1>Pininyahang Manok Order Menu</h1>
+    <form id="orderForm">
+        <div class="menu-item">
+            <h3>Pininyahang Manok (Pineapple Chicken)</h3>
+            <label for="manokSize">Portion Size:</label>
+            <select id="manokSize">
+                <option value="small">Small (Serves 2-3) - $8.99</option>
+                <option value="medium">Medium (Serves 4-5) - $14.99</option>
+                <option value="large">Large (Serves 6-8) - $22.99</option>
+            </select>
+            <label for="manokQty">Quantity:</label>
+            <input type="number" id="manokQty" min="0" value="0">
+        </div>
+        
+        <div class="menu-item">
+            <h3>Pininyahang Manok with Rice</h3>
+            <label for="riceSize">Portion Size:</label>
+            <select id="riceSize">
+                <option value="small">Small (Serves 2-3) - $10.99</option>
+                <option value="medium">Medium (Serves 4-5) - $16.99</option>
+                <option value="large">Large (Serves 6-8) - $24.99</option>
+            </select>
+            <label for="riceQty">Quantity:</label>
+            <input type="number" id="riceQty" min="0" value="0">
+        </div>
+        
+        <button type="submit">Place Order</button>
+    </form>
+    
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Order submitted! (This is a demo; in a real app, handle submission here.)');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial‑scale=1.0" />
+  <title>My Portfolio — Alternative Design</title>
+  <style>
+    * { box‑sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #fafafa; color: #333; line-height: 1.6; }
+    header { background: #222; color: #fff; padding: 30px 0; text-align: center; }
+    header h1 { font-size: 2.8rem; letter-spacing: 2px; }
+    nav { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+    nav ul { display: flex; justify-content: center; gap: 20px; list-style: none; padding: 15px 0; }
+    nav ul li a { text-decoration: none; color: #333; font-weight: 500; padding: 8px 12px; transition: background-color 0.3s, color 0.3s; }
+    nav ul li a:hover { background: #222; color: #fff; border-radius: 4px; }
+    .hero { display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 80px 20px; background: linear-gradient(135deg, #4b6cb7, #3a5278); color: white; text-align: center; }
+    .hero img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid rgba(255,255,255,0.6); object-fit: cover; margin-bottom: 20px; }
+    .hero h2 { font-size: 2.4rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.1rem; margin-bottom: 20px; max-width: 500px; }
+    .btn-primary { display: inline-block; background: #ff6b6b; color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: 500; transition: background 0.3s; }
+    .btn-primary:hover { background: #e55a5a; }
+    .container { width: 90%; max-width: 1100px; margin: 40px auto; }
+    .about, .contact { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 60px; }
+    .about h2, .contact h2 { text-align: center; font-size: 2rem; margin-bottom: 20px; color: #222; }
+    .about p { margin-bottom: 15px; }
+    .project-grid { display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 60px; }
+    .project-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+    .project-card img { width: 100%; height: auto; display: block; }
+    .project-card .card-content { padding: 20px; flex: 1; }
+    .project-card .card-content h3 { margin-bottom: 10px; font-size: 1.3rem; color: #444; }
+    .project-card .card-content p { flex: 1; font-size: 0.95rem; color: #555; margin-bottom: 15px; }
+    .project-card .card-content a { display: inline-block; text-decoration: none; color: #fff; background: #4b6cb7; padding: 10px 18px; border-radius: 4px; transition: background 0.3s; }
+    .project-card .card-content a:hover { background: #3a5278; }
+    footer { text-align: center; padding: 20px; background: #222; color: #ccc; }
+    @media (max-width: 600px) {
+      .hero { padding: 60px 10px; }
+      nav ul { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MY WEBSITE</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="GO.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+	  <li><a href="th.html">Collection</a></li>
+      <li><a href="GGG.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <img src="homer.jpg" alt="Profile Picture">
+    <h2>Welcome to Website</h2>
+    <p>I'm a passionate developer and creative coder. Explore my work and projects below.</p>
+    <a href="project.html" class="btn-primary">See My Work</a>
+  </section>
+
+  <div class="container">
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 EJ DELA CRUZ</p>
+  </footer>
+
+</body>
+</html>
